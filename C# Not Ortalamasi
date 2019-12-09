@@ -1,0 +1,25 @@
+Not Ortalamasını Bulma
+
+int not1, not2, not3, not4, not5, ort;
+
+            Console.WriteLine("............Sınav Notlarının Ortalamasını Alan Program.........");
+
+            Console.Write("Birinci Sınav Notunuzu Giriniz:.......");
+            not1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("İkinci Sınav Notunuzu Giriniz:........");
+            not2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Üçüncü Sınav Notunuzu Giriniz:........");
+            not3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Dörtdüncü Sınav Notunuzu Giriniz:.....");
+            not4 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Beşinci Sınav Notunuzu Giriniz:.......");
+            not5 = Convert.ToInt32(Console.ReadLine());
+
+
+            ort = (not1 + not2 + not3 + not4+ not5) / 5;
+
+            Console.WriteLine("Sınav Not Ortalamanız:....."+ort);
