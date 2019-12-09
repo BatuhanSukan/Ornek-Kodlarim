@@ -1,0 +1,25 @@
+Console.Write("Adinizi Giriniz:   ");
+            ad = Console.ReadLine();
+
+            Console.Write("Soyadınızı Giriniz:");
+            soyad = Console.ReadLine();
+
+            Console.Write("Hangi Okulu Bitirdiniz ?          ");
+            okul = Console.ReadLine();
+
+            Console.Write("Mesleğiniz Nedir ?                   ");
+            meslek = Console.ReadLine();
+
+            Console.Write("Yaşınızı Giriniz:           "                 );
+            yas = Console.ReadLine();
+
+            Console.Write("Doğum Tarihiniz Giriniz:");
+            dtarih = Console.ReadLine();
+
+            Console.WriteLine("Adınız:............."+ad);
+            Console.WriteLine("Soyadınız:.........."+soyad);
+            Console.WriteLine("Okulunuz:..........."+okul);
+            Console.WriteLine("Mesleğiniz:........."+meslek);
+            Console.WriteLine("Yaşınız:............"+yas);
+            Console.WriteLine("Doğum Tarihiniz:...." + dtarih);
+            Console.Read();
