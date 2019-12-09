@@ -1,0 +1,74 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DeğişkenÖdev01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            double para,islem,sonuc;
+
+            Console.Title = "Döviz Hesap Makinesi" ;
+            Console.WriteLine("..........Döviz Hesap Makinesine Hoşgeldiniz.........");
+            Console.WriteLine("Güncel Kurlarımız Aşağıdadır...");
+            Console.WriteLine("USD ->TL   = 5.56     (1)\nTL  ->USD  = 0.45     (2)\nEURO->TL   = 6.12     (3)\nTL  ->EURO = 0.40     (4)\nUSD ->EURO = 0.86     (5)\nEURO->USD  = 1.12     (6)");
+            Console.Write("Devam Etmek İçin İşlem Yapmak İstediğiniz Döviz Kurunun Numarasını Giriniz:.....");
+            islem = Convert.ToDouble(Console.ReadLine());
+
+            if( islem == 1)
+            {
+                Console.Write("Lütfen Döviz Miktarını Giriniz:.....");
+                para = Convert.ToDouble(Console.ReadLine());
+                sonuc = para * 5.56;
+                Console.WriteLine("Dönüştürülen Döviz Miktarının Sonucu:.....   "+sonuc+" TL");
+            }
+            else if( islem ==2 ){
+                Console.Write("Lütfen Döviz Miktarını Giriniz:.....");
+                para = Convert.ToDouble(Console.ReadLine());
+                sonuc = para * 0.45;
+                Console.WriteLine("Dönüştürülen Döviz Miktarının Sonucu:.....   "+sonuc+" USD");
+            }
+            else if(islem == 3)
+            {
+                Console.Write("Lütfen Döviz Miktarını Giriniz:.....");
+                para = Convert.ToDouble(Console.ReadLine());
+                sonuc = para * 6.12;
+                Console.WriteLine("Dönüştürülen Döviz Miktarının Sonucu:.....   " + sonuc+" TL");
+            }
+            else if (islem == 4)
+            {
+                Console.Write("Lütfen Döviz Miktarını Giriniz:.....");
+                para = Convert.ToDouble(Console.ReadLine());
+                sonuc = para * 0.40;
+                Console.WriteLine("Dönüştürülen Döviz Miktarının Sonucu:.....   " + sonuc+" EURO");
+            }
+            else if (islem == 5)
+            {
+                Console.Write("Lütfen Döviz Miktarını Giriniz:.....");
+                para = Convert.ToDouble(Console.ReadLine());
+                sonuc = para * 0.86;
+                Console.WriteLine("Dönüştürülen Döviz Miktarının Sonucu:.....   " + sonuc+" EURO");
+            }
+            else if (islem == 6)
+            {
+                Console.Write("Lütfen Döviz Miktarını Giriniz:.....");
+                para = Convert.ToDouble(Console.ReadLine());
+                sonuc = para * 1.12;
+                Console.WriteLine("Dönüştürülen Döviz Miktarının Sonucu:.....   " + sonuc+" USD");
+            }
+            else
+            {
+                Console.WriteLine("Hatalı İşlem");
+            }
+
+            Console.WriteLine("Bankamızı Tercih Ettiğiniz İçin Teşşekür Ederiz...");
+
+            Console.ReadKey();
+        }
+    }
+}
